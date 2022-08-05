@@ -1,53 +1,142 @@
-
-
-#logo
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One:ital@0;1&display=swap');
+*
 {
-    display: inline-block;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Alumni Sans Inline One', cursive;
 }
 
-h1
+section
 {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("./images/fondo-azul-verde-abstracto-fondo-degradado-naturaleza-ventana-helada-vector_88211-2926.webp");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 50px;
+
 }
 
-div
+.container
 {
-    display: inline-block;
-    background: rgba(226, 226, 227, 0.905);
-    width: 65%;
-    height: 80vh;
-    margin-right: 30px;
-    margin-left: 20px;
+    position: relative;
+    width: 70%;
+    min-height: calc(100vh - 280px);
+    min-height: 300px;
+    background: rgba(255,255,255,0.5);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+header
+{
+    position: absolute;
+    top: -40px;
+    right: 20px;
+    left: 20px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255,255,255,0.2);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border:1px solid rgba(255,255,255,0.25);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5) ;
+}
+
+header p
+{
+    display: flex;
+    font-weight: 500;
+    font-size: 2.5em;
+}
+
+.content
+{
+    transform: translateX(-100px);
+    max-width: 800px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border:1px solid rgba(255,255,255,0.25);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5) ;
+    padding: 40px;
+    padding-left: 110px;
+}
+
+.content p
+{
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+input
+{
+    border: none;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    background: fixed;
+    border:2px solid rgba(255,255,255,0.5);
   
-}
-
-aside
-{
-    height: 80vh;
-    width: 400px;
-    border-radius: 32px;
-    display: inline-block;
-    background: rgb(235, 245, 247);
-    vertical-align: top;
-}
-
-#muñeco
-{
- 
-  
-   
 }
 
 button
 {
-   
-    
+    padding: 15px 30px;
+    background: #fff;
+    color: darkblue;
+    border-radius: 30px;
+    font-size: 1.1em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    border:1px solid rgba(255,255,255,0.25);
 }
 
-footer
+.imgBox img
 {
-    width: 100%;
-    background: aquamarine;
-    height: 30px;
+    max-width: 400px;
+    animation: animate 5s linear infinite;
+}
 
+.imgBox h3
+{
+    font-size: 2.2em;
+    margin-top: 60px;
+    font-weight: 400;
+}
+
+
+
+@keyframes animate
+{
+    0%,100%
+    {
+        transform: translateY(50px);
+    }
+    50%
+    {
+        transform: translateY(80px);
+    }
+}
+
+.footer
+{
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
+    letter-spacing: 2px;
+    font-style: italic;
 }
