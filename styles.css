@@ -1,0 +1,53 @@
+
+
+#logo
+{
+    display: inline-block;
+}
+
+h1
+{
+    display: inline-block;
+}
+
+div
+{
+    display: inline-block;
+    background: rgba(226, 226, 227, 0.905);
+    width: 65%;
+    height: 80vh;
+    margin-right: 30px;
+    margin-left: 20px;
+  
+}
+
+aside
+{
+    height: 80vh;
+    width: 400px;
+    border-radius: 32px;
+    display: inline-block;
+    background: rgb(235, 245, 247);
+    vertical-align: top;
+}
+
+#muñeco
+{
+ 
+  
+   
+}
+
+button
+{
+   
+    
+}
+
+footer
+{
+    width: 100%;
+    background: aquamarine;
+    height: 30px;
+
+}
