@@ -15,23 +15,33 @@
                 <p>Encriptador de Texto</p>
             </header>
             <div class="content">
-                <input placeholder=" Ingrese texto a Codificar">
+                <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese texto a Codificar">
              
                 <p>solo letras minusculas sin acentos</p>
-                <button>Encriptar</button>
-                <button>Desencriptar</button>
+                <button value="encriptar" id="btn-encriptar">Encriptar</button>
+                <button value="desencriptar!" id="btn-desencriptar">Desencriptar</button>
             </div>
             <div class="imgBox">
-                <img src="images/Muñeco.png">
-                <h3>Ningún mensaje fue encontrado</h3>
-                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                <div id="myDIV">
+                    <img src="./images/Muñeco.png" >
+                    <h3>Ningún mensaje fue encontrado</h3>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+
+                <div id="salida" style="display: none;">
+                    <input class="text-input-salida" type="text" id="msg">
+                    <button>Copiar</button>
+                </div>
 
             </div>
             <p class="footer">
                 Realizado por: Jose Sierra
             </p>
         </div>
-    </section>    
+    </section>
+    
+    <!-- Template Main JS File -->
+    <script src="main.js"></script>
     
 </body>
 </html>
